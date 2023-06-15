@@ -2,10 +2,11 @@ name: Reusable workflow
 
 on:
   workflow_call:
-    who-to-greet:
-      type: string
-      required: true
-      default: World
+    inputs:
+      who-to-greet:
+        type: string
+        required: true
+        default: World
     outputs:
       current-time:
         description: Holds the current time as timestamp
