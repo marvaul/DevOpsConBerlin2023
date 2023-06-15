@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: | 
            echo "Event that triggered the wf was: ${{github.event_name}}"
-           echo "Wf triggered by branch ${{github.branch}}
+           echo "Wf triggered by branch ${{github.branch}}"
 
       - uses: actions/checkout@v3.3.0
       
