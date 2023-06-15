@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "hello-world-docker-action/action.yml"
+      - "hello-world-docker-action/**"
   workflow_dispatch:
 
 jobs:
@@ -23,4 +23,4 @@ jobs:
 
       - name: Echo output time from docker container
         run: |
-          echo "output time was ${{ steps.hello-docker-action.outputs.time }}
+          echo "output time was ${{ steps.hello-docker-action.outputs.time }}"
