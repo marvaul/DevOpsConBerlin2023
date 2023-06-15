@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3.3.0
 
       - name: Run my created container action in this workflow
-        uses: ./hello-world-docker-action/action.yml
+        uses: ./hello-world-docker-action
         id: hello-docker-action
         with:
           who-to-greet: ${{ github.user }}
