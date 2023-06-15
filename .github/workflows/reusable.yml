@@ -16,7 +16,7 @@ jobs:
   reusable-job:
     runs-on: ubuntu-latest
     outputs:
-      current-time: ${{ steps.time.outputs.time }}
+      current-time: ${{ steps.time.outputs.current-time }}
     steps:
       - run: echo "Hello"
       - name: Set time
